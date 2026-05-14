@@ -109,7 +109,7 @@
 
         <div class="container">
 
-        <h2>Accessibility Features:</h2>
+        <h2 class="mix nonacc">Accessibility Features:</h2>
         <div class="mix acc">
         <p>
             There is a ramp to get down the three steps to the sunken area in the middle of the ground floor (exhibit 2).
@@ -132,10 +132,8 @@
             </figcaption>
             </figure>
         </div>
-    </section>
-
-    <section id="questions2">
-        <h2>Non-Accessible Features:</h2>
+    
+        <h2 class="mix nonacc">Non-Accessible Features:</h2>
         <div class="mix nonacc">
         <p>
             No lift/elevator to get to the second floor of the museum. Some of the rooms were quite small or had stairs in them, so while someone in a wheelchair may be able to navigate the floor they would probably not be able to see every object up close.
@@ -175,8 +173,12 @@
     </div>
 </section>
 </main>
-<script>
-    var mixer = mixitup('.container');
-</script>
+<script src="mixitup.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl);
+        </script>
 </body>
 </html>
